@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediMapa</title>
+    <link rel="shortcut icon" href="./imagenes/corazon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./estilos/normalize.css">
+    <link rel="stylesheet" href="./estilos/estilo_seccion.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+   
+</head>
+<body>
+    <div class="color-derecha"></div>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo"> 
+                <h2 class="nav__title">MediMapa</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="medico.php" class="nav__links">Buscar Médico</a>
+                </li>           
+                <li class="nav__items">
+                    <a href="#preguntas_frecuentes" class="nav__links">Preguntas</a>
+                </li>                
+                <img src="./imagenes/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./imagenes/menu.svg" class="nav__img">
+            </div>
+        </nav>
+       
+        <section class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title">Únete a nuestra comunidad hoy y descubre un mundo de oportunidades ilimitadas. ¡Regístrate ahora para empezar a disfrutar de todos nuestros beneficios exclusivos!</h1>
+                <button type="button" class="btn btn-primary" style="position: absolute; top: 500px; left: 360px;" onclick="window.location.href='TipoUsario.html'">
+                    Regístrate aquí
+                </button>
+
+               
+
+
+                <div class="container container-formulario">
+                    <div class="row">
+                        <div class="col-8"></div>
+                        <div class="col-4">
+                            <form action="./base/login.php" method="post">
+                                <h1 class="hero__title_a">Inicio de sesión</h1>
+                                <div class="mb-3" style="margin-top: 20px;"> 
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="text" class="form-control" id="correo" name="correo" placeholder="usuario@ejemplo.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contraseña" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Contraseña">
+                                </div>
+                                <div class="mb-3 d-grid">
+                                    <button type="submit" class="btn btn-primary">Iniciar Sección</button>
+                                </div>
+                            </form>
+                           <!-- <p><a href="#">Olvidaste tu Contraseña?</a></p>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <script src="./animacion/menu.js"></script>
+</body>
+</html>
